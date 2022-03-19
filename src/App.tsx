@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import './App.css';
 import {UncontrolledRating} from "./UncontrolledRating";
 import {Rating, RatingValueType} from "./Rating";
+import Input, {UncontrolledInput} from "./UncontrolledInput";
 
 function App() {
 
@@ -10,6 +11,7 @@ function App() {
         <div className="App">
             <UncontrolledRating/>
             <Rating value = {ratingValue} onClick={setRatingValue}/>
+            <UncontrolledInput/>
         </div>
     );
 }
